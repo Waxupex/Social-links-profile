@@ -1,0 +1,103 @@
+
+@font-face {
+    font-family: "inter";
+    src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Green: hsl(75, 94%, 57%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --MainFont: "inter",sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: var(--MainFont);
+    background-color: var(--Off-Black);
+}
+
+main{
+    background-color: var(--Dark-Grey);
+    max-width: 32.7rem;
+    margin: 8.4rem auto;
+    padding: 2.4rem;
+    border-radius: 1.5rem;
+    color: var(--White);
+}
+
+@media(min-width: 768px){
+    main{
+        max-width: 37.5rem;
+        margin: 17rem auto;
+        padding: 4rem;
+    }
+}
+
+img{
+    max-width: 30%;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 2.7rem;
+    margin-bottom: 0;
+}
+h1,h3{
+    font-weight: 400;
+}
+h2{
+    color: var(--Green);
+}
+
+h2, h3{
+    font-size: 1.5rem;    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials{
+    background-color: var(--Grey);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+.socials:hover{
+    cursor: pointer;
+}
+
+.socials:last-of-type{
+    margin-bottom: 0;
+}
+
+.socials__link{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.attribution{
+    width: 100%;
+    color: var(--White);
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    padding: 1rem;
+}
+
